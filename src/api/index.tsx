@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const BASE_URL = "https://slick-squids-dance.loca.lt";
+export const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 export const getRequest = async (url: string) => {
   return await axios.get(`${BASE_URL}/${url}`, {
